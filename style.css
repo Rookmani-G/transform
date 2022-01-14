@@ -1,0 +1,128 @@
+.parent {
+    display: flex;
+    justify-content: center;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;}
+
+    .item {
+        width: 100px;
+        height: 100px;
+        background-color:gray;
+        margin-right: 50px;
+        margin-left: 20px;
+        animation: item 4s linear 1s infinite;
+    }
+
+
+    .item1 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(11, 80, 76);
+        margin-right: 50px;
+        margin-left: 20px;
+        animation: item1 4s linear 1s infinite;
+    }
+
+    @keyframes item1 {
+    0%{
+        transform: skew(0deg);
+    } 25% {
+        transform: skew(20deg);
+    }
+    50% {
+        transform: skew(-20deg);
+    }
+    100% {
+        transform: skew(0deg);
+    }}
+    
+    
+    
+   
+
+    .item3 {
+        width: 100px;
+        height: 100px;
+        background-color:lightslategrey;
+        margin-right: 50px;
+        margin-left: 20px;
+        animation: item3 3s linear 1s infinite;
+    }
+    @keyframes item3{
+        0%{
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }}
+    
+        .item4 {
+            width: 100px;
+            height: 100px;
+            background-color:rgb(8, 88, 112);
+            margin-right: 50px;
+            margin-left: 20px;
+            animation: item4 3s linear 1s infinite;
+        }
+        @keyframes item4 {
+            0%{
+                transform: scaleY(0.5);
+            } 50% {
+                transform: scaleY(1);
+            }
+            100% {
+                transform: scaleY(0.5);
+            }}
+            
+
+        .item5 {
+            width: 100px;
+            height: 100px;
+            background-color:rgb(116, 7, 7);
+            margin-right: 50px;
+            margin-left: 20px;
+            animation: item5 3s linear 1s infinite;
+        }
+        @keyframes item5 {
+            0%{
+                transform: ScaleX(0.5);
+            } 
+            50% {
+                transform: ScaleX(1);
+            }
+            100% {
+                transform: ScaleX(0.5);
+            }}
+            
+
+        .item6 {
+            width: 100px;
+            height: 100px;
+            background-color:rgb(38, 141, 38);
+            margin-right: 50px;
+            margin-left: 20px;
+            animation: item6 3s linear 1s infinite;
+        }
+        @keyframes item6 {
+            0%{
+                transform: rotate(0deg);}
+            50% {
+                transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }}
+            
+    

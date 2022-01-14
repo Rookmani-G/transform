@@ -1,0 +1,108 @@
+.animation {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://physicsworld.com/wp-content/uploads/2020/08/sun-rays-152304506-Shutterstock_Volodymyr-Goinyk.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+}
+.happy {
+    background-color: orange;
+    margin-right: 10px;}
+
+    .inde {
+        background-color: white;
+        margin-right: 10px;
+    }
+    .day {
+        background-color: green;
+        margin-right: 10px;
+    }
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .roadway {
+        display: block;
+        background-image: url(https://www.trainsetsonly.com/mm5/graphics/00000001/Master/M189/lg189-7086_540x179.jpg);
+        width: 500%;
+        height: 200px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: car 6s linear infinite;
+    }
+
+
+    .town {
+        display: block;
+        background-image:url(  ./imgcity.jpg);
+        background-repeat: repeat-x;
+        width: 300%;
+        height: 300px;
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        animation: city 6s linear infinite;
+    }
+@keyframes town{
+    100% {
+        transform: translateX(-2000px);
+    }}
+
+    .car {
+        width: 400px;
+        left: 50%;
+        bottom: 100px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 2;
+    }
+
+@keyframes car{
+    100% {
+        transform: translateX(-4000px);
+    }}
+
+    .wheel {
+        left: 56%;
+        bottom: 192px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .wheel img {
+        animation: wheel 1s linear infinite;
+    }
+@keyframes wheel{
+    100% {
+        transform: rotate(360deg);
+    }}
+
+    .backwheel {
+        left: -235px;
+        position: absolute;
+    }
+
+    .frontwheel {
+        left: 63px;
+        position: absolute;
+    }
+
